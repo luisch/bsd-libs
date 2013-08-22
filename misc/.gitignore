@@ -1,0 +1,32 @@
+## general
+*.old
+*.org
+*.new
+.svn
+
+## flex & yacc
+lex.*.cpp
+*.output
+*.tab.cpp
+*.tab.hpp
+
+## sdc compilers
+crc
+*.stg
+*.las
+*.dat
+*.log
+plugin.h
+stdsdc.*
+
+## MSVC++
+*.user
+*.suo
+*.ncb
+*.sdf
+
+## C++ compiler
+*Debug*/
+*Release*/
+*testing*/
+*unicode*/
