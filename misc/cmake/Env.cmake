@@ -1,5 +1,8 @@
 ## 環境に応じた定義を定める
 
+## 汎用
+INCLUDE_DIRECTORIES( $ENV{INCLUDE} )
+
 ## Windows(32bit/64bit)環境
 IF(WIN32)
   ADD_DEFINITIONS(-DLUI_USE_WIN32)
@@ -18,6 +21,9 @@ IF(WIN32)
     
     # マルチコアによるコンパイルを有効にする
     ADD_DEFINITIONS(/MP)
+    
+    #C3859を回避する
+    ADD_DEFINITIONS(/Zm512)
     
     # Optimization flags.
     SET(CMAKE_C_FLAGS_RELEASE   "${CMAKE_C_FLAGS_RELEASE} /GL")

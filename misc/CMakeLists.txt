@@ -1,7 +1,7 @@
 #
 # CMake for LUI-misc library.
 #
-cmake_minimum_required(VERSION 2.8.4)
+cmake_minimum_required(VERSION 3.0.0)
 
 ## 追加のcmakeコード
 SET(CMAKE_MODULE_PATH
@@ -15,7 +15,7 @@ INCLUDE( BuildAndInstall )
 
 ## パッケージ名称
 project(misc)
-SET(CPACK_PACKAGE_VENDOR "xmint")
+SET(CPACK_PACKAGE_VENDOR "mint.moe")
 SET(CPACK_PACKAGE_VERSION_MAJOR 1)
 SET(CPACK_PACKAGE_VERSION_MINOR 0)
 

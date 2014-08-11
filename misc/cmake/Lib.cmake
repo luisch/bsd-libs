@@ -1,5 +1,5 @@
 include(FindPackageHandleStandardArgs)
-SET(LUI_LIBPATH_SUFFIXES lib lib64 src src64s)
+SET(LUI_LIBPATH_SUFFIXES lib lib64 src src64)
 
 FUNCTION( LUI_APPEND_DEBUGS _endvar _library )
     if(${_library} AND ${_library}_DEBUG)
